@@ -1,0 +1,78 @@
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 8%;
+
+    h2 {
+        display: inline-block;
+        position: relative;
+        padding-bottom: 6px;
+        margin-bottom: 40px;
+    }
+
+    h2:before{
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 1px;
+        bottom: 0;
+        left: 25%;
+        border-bottom: 2px solid black;
+    }
+    
+    #mainContentAbout {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        #textAbout {
+            width: 40%;
+            margin-right: 20%;
+
+            p {
+                text-align: justify;
+                margin: 25px 0;
+            }
+        }
+
+        #technologies {
+            background-color: #00C2FF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 300px;
+            height: 300px;
+
+            h3 {
+                font-family: 'Kalam', cursive;
+                font-weight: 400;
+            }
+
+            #listOfTechnologies {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                li {
+                    font-family: 'Kalam', cursive;
+                    font-weight: 400;
+                    margin: 5px 0;
+                    list-style: none;
+                }
+            }
+        }
+    }
+    
+    #listOfMedias {
+        display: flex;
+        flex-direction: row;
+
+        li {
+            list-style: none;
+        }
+    }
+}
