@@ -3,23 +3,29 @@ import './css/About.scss'
 const listMedias = [
   {
     name: "github",
-    path: "../../../imagens/github.png"
+    path: "../../../imagens/github.png",
+    link: "https://github.com/PB369"
   },
   {
     name: "linkedin",
     path: "../../../imagens/linkedin.png",
+    link: "https://www.linkedin.com/in/pedro-barros-322191193/"
   },
   {
     name: "instagram",
-    path: "../../../imagens/instagram.png"
+    path: "../../../imagens/instagram.png",
+    link: "https://www.instagram.com/pedro.b18_/"
   },
   {
     name: "whatsapp",
     path: "../../../imagens/whatsapp.png",
+    link: " https://wa.me/5511977767889"
+
   },
   {
     name: "email",
-    path: "../../../imagens/email.png"
+    path: "../../../imagens/email.png",
+    link: "mailto:pedrohbarros369@gmail.com"
   }
 ]
 
@@ -27,7 +33,11 @@ const listTechnologies = ["React", "Bootstrap", "HTML & CSS", "Sass", "JavaScrip
 
 const About = () => {
 
-  const medias = listMedias.map((media)=><li key={media.name}><img src={media.path}/></li>)
+  const medias = listMedias.map((media)=>
+  <li key={media.name} style={{margin: "0 8px"}}>
+    <a href={media.link}><img src={media.path} style={{width:"40px"}}/></a>
+  </li>)
+
   const technologies = listTechnologies.map((technology)=><li key={technology}>- {technology}</li>)
 
   return(
@@ -38,7 +48,7 @@ const About = () => {
           <h3>Minha História</h3>
           <p>Sou um jovem de São Paulo que teve primeiro contato com o mundo da programação na época do ensino fundamental, por volta dos 13 anos de idade.</p>
           <p>Atualmente estou cursando Engenharia de Software na FIAP. Mesmo estando apenas no 2° semestre, já pude aprender sobre diversas tecnologias e me capacitar para ser um bom desenvolvedor.</p>
-          <p>Estou disponível para novas oportunidades e permaneço focado em construir meu caminho profissional, vencendo novos desafios a cada dia.</p>
+          <p>Estou disponível para novas oportunidades e permaneço focado em aperfeiçoar minha jornada profissional, vencendo novos desafios a cada dia.</p>
         </div>
         <div id='technologies'>
           <div id='tape'></div>
@@ -47,12 +57,12 @@ const About = () => {
             {technologies}
           </ul>
         </div>
-      </div>
-      <div>
-        <ul id='listOfMedias'>
-          {medias}
-          <li><a href='#' target='_blank'>Currículo</a></li>
-        </ul>
+        <div id='medias'>
+          <ul id='listOfMedias'>
+            {medias}
+            <li><a href='../../../ExemploPDF.pdf' target='_blank'>Currículo</a></li>
+          </ul>
+        </div>
       </div>
     </section>
   )
