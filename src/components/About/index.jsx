@@ -1,6 +1,7 @@
 import './css/About.scss'
 
 const About = () => {
+
   return(
     <>
     <h2>Sobre mim</h2>
