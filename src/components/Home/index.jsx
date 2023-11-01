@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll'
 import './css/Home.scss'
 
 const Home = () => {
@@ -10,7 +11,10 @@ const Home = () => {
                     <p id='introParagraph'>Possuindo 1 ano de experiência, já desenvolvi diferentes projetos para as mais variadas finalidades.</p>
                 </div>
                 <div id="arrowDiv">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="128" viewBox="0 -960 960 960" width="128" id='arrowSVG'><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" id='arrow'/></svg>
+                    <Link activeClass="active"spy={true}to="about"smooth={true}duration={1000}>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="128" viewBox="0 -960 960 960" width="128" id='arrowSVG'><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" id='arrow'/></svg>
+                    </Link>
+                    
                 </div>
             </div>
         </header>
