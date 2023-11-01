@@ -80,6 +80,7 @@ $big-size: 1.8em;
                 font-size: $big-size;
                 text-align: center;
             }
+
             
             #listOfTechnologies {
                 display: flex;
@@ -94,6 +95,10 @@ $big-size: 1.8em;
                     list-style: none;
                     text-align: center;
                 }
+            }
+            
+            h3:hover, h3:active, li:hover, li:active {
+                cursor:default;
             }
         }
     }
@@ -113,15 +118,30 @@ $big-size: 1.8em;
                 #resume {
                     border-bottom: 1px solid black;
                     text-decoration: none;
+                    text-align: center;
                     margin-left: 10px;
-                    padding-bottom: 2px;
+                    padding: 2px 5px 2px 5px;
                     color: black;
                     position: relative;
                     top: 4px;
                     font-size: $small-size;
+                    transition: 0.15s;
+                }
+                #resume:hover {
+                    top: 1px;
+                }
+                #resume:active {
+                    color: rgb(121, 121, 121);
+                }
+                
+                a:hover img {
+                    position: relative;
+                    top: -3px;
+                }
+                a:active img {
+                    transform: scale(0.95);
                 }
             }
-            
         }
     }
 }

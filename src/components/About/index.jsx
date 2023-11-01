@@ -36,7 +36,8 @@ const About = () => {
   <li key={media.name} style={{margin: "0 8px"}}>
     <a href={media.link} target={"_blank"} rel="noreferrer">
       <img 
-      src={media.path} 
+      src={media.path}
+      draggable="false" 
       style={{width:"40px"}}/>
     </a>
   </li>)
