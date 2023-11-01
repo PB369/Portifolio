@@ -38,9 +38,7 @@ $big-size: 1.8em;
             width: 70%;
             margin-right: 10%;
 
-            h3 {
-                font-size: $big-size;
-            }
+            h3 {font-size: $big-size;}
 
             p {
                 text-align: justify;
@@ -116,7 +114,6 @@ $big-size: 1.8em;
                 list-style: none;
 
                 #resume {
-                    border-bottom: 1px solid black;
                     text-decoration: none;
                     text-align: center;
                     margin-left: 10px;
@@ -127,20 +124,29 @@ $big-size: 1.8em;
                     font-size: $small-size;
                     transition: 0.15s;
                 }
-                #resume:hover {
-                    top: 1px;
+
+                #resume:before{
+                    content: "";
+                    position: absolute;
+                    width: 95%;
+                    height: 1px;
+                    bottom: 0;
+                    left: 4%;
+                    border-bottom: 1px solid black;
                 }
-                #resume:active {
-                    color: rgb(121, 121, 121);
-                }
+
+                #resume:hover {top: 1px;}
+
+                #resume:active {color: rgb(121, 121, 121);}
+
+                img {padding: 1px;}
                 
                 a:hover img {
                     position: relative;
                     top: -3px;
                 }
-                a:active img {
-                    transform: scale(0.95);
-                }
+
+                a:active img {transform: scale(0.95);}
             }
         }
     }
