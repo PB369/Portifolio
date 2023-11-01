@@ -34,7 +34,7 @@ const About = () => {
 
   const medias = listMedias.map((media)=>
   <li key={media.name} style={{margin: "0 8px"}}>
-    <a href={media.link}>
+    <a href={media.link} target={"_blank"} rel="noreferrer">
       <img 
       src={media.path} 
       style={{width:"40px"}}/>
