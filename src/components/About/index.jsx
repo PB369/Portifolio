@@ -33,12 +33,11 @@ const About = () => {
   const listTechnologies = ["React", "Bootstrap", "HTML & CSS", "Sass", "JavaScript", "Git & GitHub", "Python", "Arduino"]
 
   const medias = listMedias.map((media)=>
-  <li key={media.name} style={{margin: "0 8px"}}>
+  <li key={media.name}>
     <a href={media.link} target={"_blank"} rel="noreferrer">
       <img 
       src={media.path}
-      draggable="false" 
-      style={{width:"40px"}}/>
+      draggable="false"/>
     </a>
   </li>)
 
@@ -64,8 +63,8 @@ const About = () => {
         <div id='medias'>
           <ul id='listOfMedias'>
             {medias}
-            <li><a href='../../../ExemploPDF.pdf' target='_blank' id='resume'>Currículo</a></li>
           </ul>
+          <a href='../../../ExemploPDF.pdf' target='_blank' id='resume'>Currículo</a>
         </div>
       </div>
     </section>
