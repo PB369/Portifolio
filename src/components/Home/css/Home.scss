@@ -1,3 +1,5 @@
+@media screen and (min-width: 860px) {
+
 $medium-size: 1.5em;
 $small-size: 1.4em;
 $big-size: 4.25em;
@@ -26,7 +28,7 @@ header {
       #welcome {
         background-color: white;
         border-radius: 8px;
-        padding: 5px 35px;
+        padding: 5px 4%;
         font-weight: bold;
         font-size: $medium-size;
         text-align: center;
@@ -60,4 +62,139 @@ header {
       cursor: pointer;
     }
   }
+}
+}
+
+@media screen and (max-width: 859px) {
+
+$medium-size: 1.2em;
+$small-size: 1.1em;
+$big-size: 3.4em;
+
+header {
+  background: rgb(0,194,255);
+  background: linear-gradient(180deg, rgba(0,194,255,1) 0%, rgba(255,255,255,1) 100%);
+  background-repeat: no-repeat;
+  
+  #homeContent {
+    display: flex;
+    height: 100vh;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 36px;
+
+    #intro {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      #welcome {
+        background-color: white;
+        border-radius: 8px;
+        padding: 5px 4%;
+        font-weight: bold;
+        font-size: $medium-size;
+        text-align: center;
+      }
+    
+      h1 {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: $big-size;
+        margin: 40px 0 60px 0;
+      }
+    
+      #introParagraph {
+        font-size: $small-size;
+        max-width: 650px;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  
+    #arrowSVG {
+      position: absolute;
+      transform: translate(-50%);
+      left: 50%;
+      bottom: 0;
+      text-align: center;
+      width: 124px;
+    }
+
+    #arrowSVG:hover {
+      cursor: pointer;
+    }
+  }
+}
+}
+
+@media screen and (max-width: 600px) {
+
+$medium-size: 1em;
+$small-size: 0.9em;
+$big-size: 2.2em;
+
+header {
+  background: rgb(0,194,255);
+  background: linear-gradient(180deg, rgba(0,194,255,1) 0%, rgba(255,255,255,1) 100%);
+  background-repeat: no-repeat;
+  
+  #homeContent {
+    display: flex;
+    height: 100vh;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 36px;
+
+    #intro {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      #welcome {
+        background-color: white;
+        border-radius: 8px;
+        padding: 5px 4%;
+        font-weight: bold;
+        font-size: $medium-size;
+        text-align: center;
+      }
+    
+      h1 {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: $big-size;
+        margin: 40px 0 45px 0;
+      }
+    
+      #introParagraph {
+        font-size: $small-size;
+        max-width: 650px;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  
+    #arrowSVG {
+      position: absolute;
+      transform: translate(-50%);
+      left: 50%;
+      bottom: 0;
+      text-align: center;
+      width: 78px;
+    }
+
+    #arrowSVG:hover {
+      cursor: pointer;
+    }
+  }
+}
 }
