@@ -11,13 +11,13 @@ header {
   
   #homeContent {
     display: flex;
-    height: 100vh;
     justify-content:center;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
     padding: 0 36px;
+    height: 100vh;
 
     #intro {
       display: flex;
@@ -78,14 +78,14 @@ header {
   
   #homeContent {
     display: flex;
-    height: 100vh;
     justify-content:center;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
     padding: 0 36px;
-
+    height: 100vh;
+    
     #intro {
       display: flex;
       justify-content: center;

@@ -32,7 +32,7 @@ const About = () => {
   
   const listTechnologies = ["React", "Bootstrap", "HTML & CSS", "Sass", "JavaScript", "Git & GitHub", "Python", "Arduino"]
 
-  const medias = listMedias.map((media)=>
+  const medias = listMedias.map(media =>
   <li key={media.name}>
     <a href={media.link} target={"_blank"} rel="noreferrer">
       <img 
@@ -41,7 +41,7 @@ const About = () => {
     </a>
   </li>)
 
-  const technologies = listTechnologies.map((technology)=><li key={technology}>- {technology}</li>)
+  const technologies = listTechnologies.map(technology => <li key={technology}>- {technology}</li>)
 
   return(
     <section id='about'>

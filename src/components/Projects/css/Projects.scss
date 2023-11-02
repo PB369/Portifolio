@@ -1,0 +1,323 @@
+@media screen and (min-width: 1240px) {
+  
+  $small-size: 1em;
+  $medium-size: 1.4em;
+  $big-size: 1.8em;
+
+  #projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  h2 {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 6px;
+    margin-bottom: 80px;
+    font-size: $big-size;
+  }
+
+  h2:before{
+    content: "";
+    position: absolute;
+    width: 65%;
+    height: 1px;
+    bottom: 0;
+    left: 20%;
+    border-bottom: 2px solid black;
+  }
+
+  #mainContentProjects {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+    .projectItem {
+      grid-column: 1/2;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      margin-bottom: 100px;
+
+      img {
+        grid-column: 1/2;
+        width: 500px;
+        margin: 60px 80px 60px 0;
+      }
+
+      .aboutProject {
+        grid-column: 2/3;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        h3 {
+          margin-bottom: 20px;
+          font-size: $big-size;
+        }
+
+        p {
+          font-size: $medium-size;
+          text-align: justify;
+        }
+
+        .tags {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-wrap: wrap;
+          margin: 20px 0;
+
+          span {
+              background-color: #E1E1E1;
+              margin-right: 15px;
+              margin-bottom: 10px;
+              padding: 8px 20px;
+              border-radius: 5px;
+              font-size: $small-size;
+              font-weight: bold;
+            }
+        }
+        
+        .accessProjectButton {
+          text-decoration: none;
+          background-color: #00C2FF;
+          border: 1px solid black;
+          border-radius: 5px;
+          padding: 8px 35px;
+          font-size: $medium-size;
+          color: white;
+          transition: 0.1s;
+        }
+
+        .accessProjectButton:hover {
+          cursor: pointer;
+          transform: scale(0.98);
+        }
+
+        .accessProjectButton:active {transform: scale(0.96);}
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  
+  $small-size: 1em;
+  $medium-size: 1.1em;
+  $big-size: 1.6em;
+
+  #projects {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  h2 {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 6px;
+    margin-bottom: 40px;
+    font-size: $big-size;
+  }
+
+  h2:before{
+    content: "";
+    position: absolute;
+    width: 65%;
+    height: 1px;
+    bottom: 0;
+    left: 20%;
+    border-bottom: 2px solid black;
+  }
+
+  #mainContentProjects {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+    .projectItem {
+      grid-column: 1/2;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      margin-bottom: 60px;
+
+        img {
+          grid-column: 1/2;
+          grid-row: 1/2;
+          width: 350px;
+          margin: 0 auto 25px auto;
+        }
+
+      .aboutProject {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h3 {
+          margin-bottom: 20px;
+          font-size: $big-size;
+        }
+
+        p {
+          font-size: $medium-size;
+          text-align: justify;
+        }
+
+        .tags {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          margin: 20px 0;
+
+          span {
+              background-color: #E1E1E1;
+              margin: 0 15px;
+              padding: 8px 20px;
+              border-radius: 5px;
+              font-size: $small-size;
+              font-weight: bold;
+            }
+        }
+
+        .accessProjectButton {
+          text-decoration: none;
+          background-color: #00C2FF;
+          border: 1px solid black;
+          border-radius: 5px;
+          padding: 8px 35px;
+          font-size: $medium-size;
+          color: white;
+          transition: 0.1s;
+        }
+
+        .accessProjectButton:hover {
+          cursor: pointer;
+          transform: scale(0.98);
+        }
+        
+        .accessProjectButton:active {transform: scale(0.96);}
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  
+  $small-size: 0.75em;
+  $medium-size: 1em;
+  $big-size: 1.5em;
+
+  #projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  h2 {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 6px;
+    margin-bottom: 40px;
+    font-size: $big-size;
+  }
+
+  h2:before{
+    content: "";
+    position: absolute;
+    width: 65%;
+    height: 1px;
+    bottom: 0;
+    left: 20%;
+    border-bottom: 2px solid black;
+  }
+
+  #mainContentProjects {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+    .projectItem {
+      grid-column: 1/2;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      margin-bottom: 50px;
+
+        img {
+          grid-column: 1/2;
+          grid-row: 1/2;
+          width: 250px;
+          margin: 10px auto;
+        }
+
+      .aboutProject {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h3 {
+          margin-bottom: 20px;
+          font-size: $medium-size;
+        }
+
+        p {
+          font-size: $small-size;
+          text-align: justify;
+        }
+
+        .tags {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          margin: 20px 0;
+
+          span {
+              background-color: #E1E1E1;
+              margin-right: 15px;
+              margin-bottom: 10px;
+              padding: 8px 20px;
+              border-radius: 5px;
+              font-size: $small-size;
+              font-weight: bold;
+            }
+        }
+
+        .accessProjectButton {
+          text-decoration: none;
+          background-color: #00C2FF;
+          border: 1px solid black;
+          border-radius: 5px;
+          padding: 8px 35px;
+          font-size: $medium-size;
+          color: white;
+          transition: 0.1s;
+        }
+
+        .accessProjectButton:hover {
+          cursor: pointer;
+          transform: scale(0.98);
+        }
+        
+        .accessProjectButton:active {transform: scale(0.96);}
+      }
+    }
+  }
+}
