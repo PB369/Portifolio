@@ -3,7 +3,7 @@ import './css/Home.scss'
 
 const Home = () => {
     return(
-        <header>
+        <header id='home'>
             <div id='homeContent'>
                 <div id="intro">
                     <p id="welcome">Bem-vindo, meu nome é Pedro &#x1F44B;</p>

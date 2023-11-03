@@ -1,6 +1,7 @@
 import './css/About.scss'
 
 const About = () => {
+
   const listMedias = [
     {
       name: "github",
@@ -29,7 +30,7 @@ const About = () => {
       link: "mailto:pedrohbarros369@gmail.com"
     }
   ]
-  
+
   const listTechnologies = ["React", "Bootstrap", "HTML & CSS", "Sass", "JavaScript", "Git & GitHub", "Python", "Arduino"]
 
   const medias = listMedias.map(media =>
@@ -40,7 +41,7 @@ const About = () => {
       draggable="false"/>
     </a>
   </li>)
-
+  
   const technologies = listTechnologies.map(technology => <li key={technology}>- {technology}</li>)
 
   return(
