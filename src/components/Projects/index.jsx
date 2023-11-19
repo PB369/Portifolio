@@ -7,7 +7,7 @@ const Projects = () => {
       name: "Boreal Tech Store",
       image: "../../../imagens/projects/boreal-tech-store-show.png",
       description: "Home Page voltado para uma loja de vendas de smartphones e tablets. Com um toque minimalista e moderno, o projeto é responsivo para todos os dispositivos.",
-      link: "https://boreal-tech-store.vercel.app/",
+      link: "https://pb369-projects-boreal-tech-store.vercel.app/",
       tags: ["HTML & CSS"]
     },
     {
@@ -16,6 +16,13 @@ const Projects = () => {
       description: "Temporizador totalmente funcional, incluindo seleção de diferentes alarmes, voltado para facilitar a prática do método Pomodoro.",
       link: "https://pb369-projects-pomodorotimer.vercel.app/",
       tags: ["HTML & CSS", "JavaScript", "Sass"]
+    },
+    {
+      name: "Comic Store",
+      image: "../../../imagens/projects/comic-store-show.png",
+      description: "Home Page de uma loja de itens sobre personagens da Marvel, DC Comics e animes. Além de sua responsividade, este projeto inclui a utilização de um carrossel, uma tabela e um modal.",
+      link: "https://pb369-projects-comic-store.vercel.app/",
+      tags: ["React", "Bootstrap", "HTML & CSS", "Sass"]
     }
   ]
 
