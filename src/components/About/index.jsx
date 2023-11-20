@@ -31,7 +31,7 @@ const About = () => {
     }
   ]
 
-  const listTechnologies = ["React", "Bootstrap", "HTML & CSS", "Sass", "JavaScript", "Git & GitHub", "Python", "Arduino"]
+  const listTechnologies = ["React", "Bootstrap", "HTML & CSS", "Sass", "JavaScript", "Git & GitHub", "Python"]
 
   const medias = listMedias.map(media =>
   <li key={media.name}>
