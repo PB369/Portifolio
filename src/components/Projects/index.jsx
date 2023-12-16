@@ -18,11 +18,11 @@ const Projects = () => {
       tags: ["HTML & CSS", "JavaScript", "Sass"]
     },
     {
-      name: "Comic Store",
-      image: "../../../imagens/projects/comic-store-show.png",
-      description: "Home Page de uma loja de itens sobre personagens da Marvel, DC Comics e animes. Além de sua responsividade, este projeto inclui a utilização de um carrossel, uma tabela e um modal.",
-      link: "https://pb369-projects-comic-store.vercel.app/",
-      tags: ["React", "Bootstrap", "HTML & CSS", "Sass"]
+      name: "Green Way",
+      image: "../../../imagens/projects/green-way-show.png",
+      description: "Single Page Application destinada a oferecer um serviço de conversão de moedas, utilizando-se de uma API. Além disso, a aplicação oferece uma funcionalidade de Click and Copy para os valores monetários.",
+      link: "https://pb369-projects-green-way.vercel.app/",
+      tags: ["React", "HTML & CSS", "Sass", "Figma"]
     }
   ]
 

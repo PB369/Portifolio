@@ -65,7 +65,7 @@ const About = () => {
           <ul id='listOfMedias'>
             {medias}
           </ul>
-          <a href='../../../Curriculo-Pedro Barros-Desenvolvedor-Front-End.pdf' target='_blank' id='resume'>Currículo</a>
+          <a href='../../../Curriculo-Pedro-Barros-Desenvolvedor Front-End.pdf' target='_blank' id='resume'>Currículo</a>
         </div>
       </div>
     </section>
