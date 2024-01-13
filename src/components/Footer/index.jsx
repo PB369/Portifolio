@@ -42,7 +42,7 @@ const Footer = () => {
   return (
     <footer>
       <div id="authorBrand">
-        <p>&copy; 2023 Pedro Barros</p>
+        <p>&copy; 2024 Pedro Barros</p>
         <p>Todos os direitos reservados.</p>
       </div>
       <div id='medias'>
