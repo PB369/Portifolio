@@ -10,12 +10,7 @@ const Footer = () => {
     {
       name: "linkedin",
       path: "../../../imagens/linkedin.png",
-      link: "https://www.linkedin.com/in/pedro-barros-322191193/"
-    },
-    {
-      name: "instagram",
-      path: "../../../imagens/instagram.png",
-      link: "https://www.instagram.com/pedro.b18_/"
+      link: "https://www.linkedin.com/in/pebarros/"
     },
     {
       name: "whatsapp",
