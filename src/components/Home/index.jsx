@@ -8,7 +8,7 @@ const Home = () => {
                 <div id="intro">
                     <p id="welcome">Bem-vindo, meu nome é Pedro &#x1F44B;</p>
                     <h1>Software Engineer</h1>
-                    <p id='introParagraph'>Possuindo 1 ano de experiência, já desenvolvi diferentes projetos para as mais variadas finalidades.</p>
+                    <p id='introParagraph'>Entusiata de tecnologia com experiência aplicada em diversas soluções e projetos.</p>
                 </div>
                 <div id="arrowDiv">
                     <Link activeClass="active"spy={true}to="about"smooth={true}duration={1000}>
